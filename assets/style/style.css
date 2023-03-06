@@ -2,6 +2,7 @@ body {
   background-image: url(/assets/images/SnowyBackground.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  font-family: "Marck Script", cursive;
 }
 img {
   width: 200px;
@@ -64,7 +65,7 @@ p {
 #primaryProject {
   flex-grow: 8;
   margin: 0px 29% 20px 29%;
-  padding: 25px 25px 25px 25px;
+  padding: 25px 25px 10px 25px;
   background-color: #1c5b8a;
   color: #f0f5f9;
   border: #f0f5f9;
@@ -77,10 +78,11 @@ p {
   object-fit: cover;
 }
 #primaryProject h2 {
-  font-size: 35px;
+  padding-top: 5px;
+  font-size: 40px;
 }
 #primaryProject p {
-  font-size: 20px;
+  font-size: 28px;
 }
 #fitness {
   margin: 10px 30px 20px 555px;
@@ -120,10 +122,10 @@ p {
   margin: 10px 400px 20px 0px;
 }
 .contact {
-  margin: 20px 0px 45px 39%;
+  margin: 20px 0px 45px 37%;
   background-color: #1c5b8a;
-  width: 550px;
-  height: 100px;
+  width: 600px;
+  height: 110px;
   font-size: 24px;
 }
 .contact h2 {
@@ -150,4 +152,10 @@ footer {
   background-color: #0b304d;
   color: #f0f5f9;
   font-size: 16px;
+}
+#phonenumber::after {
+  content: "Phone Number";
+}
+#phonenumber:hover::after {
+  content: "801-598-1469";
 }
