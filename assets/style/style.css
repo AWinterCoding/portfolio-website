@@ -3,6 +3,7 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   font-family: "Marck Script", cursive;
+  justify-content: center;
 }
 img {
   width: 200px;
@@ -53,34 +54,33 @@ p {
   background-color: #5c99c5;
   color: #f0f5f9;
   margin: 30px;
-  margin-left: 30%;
+  justify-content: center;
   width: 40%;
-  flex-direction: row;
+  border-radius: 20px;
+  border-style: dashed;
+  border-color: #f0f5f9;
+  border-width: 2px;
+  margin-left: 31.5%;
 }
 .profilesection h2 {
   font-size: 40px;
-  height: 16%;
-  width: 55%;
   text-align: center;
-  padding-left: 25%;
-  padding-right: 19%;
-  border: #f0f5f9;
-  border-style: solid;
+  padding-top: 10px;
 }
 .profilesection article {
   font-size: 25px;
-  height: 80%;
-  width: 80%;
-  align-content: center;
   text-align: center;
-  border: #f0f5f9;
-  border-style: solid;
-  padding: 5px 40px 0px 40px;
+  padding: 5px 40px 0px 15px;
 }
 #profilephoto {
   float: left;
-  width: 45%;
-  height: 45%;
+  width: 35%;
+  height: 35%;
+  border-radius: 200px;
+  margin: 10px 0px 10px 15px;
+  border-color: #2c7cce;
+  border-width: 5px;
+  border-style: solid;
 }
 .projects {
   display: flex;
@@ -90,6 +90,7 @@ p {
 .projects img {
   width: 400px;
   object-fit: cover;
+  border-radius: 15px;
 }
 #primaryProject {
   flex-grow: 8;
@@ -187,4 +188,120 @@ footer {
 }
 #phonenumber:hover::after {
   content: "801-598-1469";
+}
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    width: 75%;
+    float: none;
+  }
+  nav {
+    display: block;
+    float: none;
+  }
+  .projects {
+    flex-direction: row;
+  }
+  #fitness {
+    margin-left: 15%;
+    width: auto;
+  }
+  #fitness img {
+    width: 400px;
+    height: 225px;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 0px;
+  }
+  #fitness h3 {
+    font-size: 34px;
+    text-align: center;
+  }
+  #fitness p {
+    display: none;
+  }
+  #primaryProject {
+    margin-left: 15%;
+    width: auto;
+    font-size: 5px;
+  }
+  #primaryProject img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  #primaryProject h2 {
+    font-size: 34px;
+    text-align: center;
+  }
+  #primaryProject p {
+    display: none;
+  }
+  body {
+    background-size: cover;
+    background-position: 50%;
+  }
+  #design {
+    margin-left: 15%;
+    width: auto;
+  }
+  #design img {
+    width: 400px;
+    height: 225px;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 0px;
+  }
+  #design h3 {
+    font-size: 34px;
+    text-align: center;
+  }
+  #design p {
+    display: none;
+  }
+  #phone {
+    margin-left: 15%;
+    width: auto;
+  }
+  #phone img {
+    width: 400px;
+    height: 225px;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 0px;
+  }
+  #phone h3 {
+    font-size: 34px;
+    text-align: center;
+  }
+  #phone p {
+    display: none;
+  }
+  #travel {
+    margin-left: 15%;
+    width: auto;
+  }
+  #travel img {
+    width: 400px;
+    height: 225px;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 0px;
+  }
+  #travel h3 {
+    font-size: 34px;
+    text-align: center;
+  }
+  #travel p {
+    display: none;
+  }
+  .contact {
+    margin-left: 0px;
+    width: 100%;
+  }
+  footer {
+    width: 64%;
+    padding-left: 35%;
+  }
 }
