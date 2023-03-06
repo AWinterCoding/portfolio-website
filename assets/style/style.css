@@ -8,10 +8,39 @@ img {
   width: 200px;
   height: 200px;
 }
+header {
+  display: inline-block;
+  width: 97.9%;
+  justify-content: space-between;
+  background-color: #2c7cce;
+  padding: 20px 0px 10px 20px;
+  margin: auto;
+  border-width: 5px;
+  border-radius: 30px;
+  border-style: double;
+  color: #f0f5f9;
+}
+nav {
+  float: right;
+  margin-right: 50px;
+  margin-bottom: 5px;
+}
+nav a {
+  text-decoration: none;
+  color: #f0f5f9;
+  display: block;
+  padding: 10px;
+}
+nav li {
+  float: right;
+  margin: auto;
+  padding: 5px 5px 5px 5px;
+  font-size: 28px;
+}
 h1 {
   font-size: 50px;
-  background-color: #2c7cce;
-  color: white;
+  color: #f0f5f9;
+  float: left;
 }
 h3 {
   font-size: 24px;
@@ -22,7 +51,7 @@ p {
 .profilesection {
   display: flex;
   background-color: #5c99c5;
-  color: white;
+  color: #f0f5f9;
   margin: 30px;
   margin-left: 30%;
   width: 40%;
@@ -35,7 +64,7 @@ p {
   text-align: center;
   padding-left: 25%;
   padding-right: 19%;
-  border: white;
+  border: #f0f5f9;
   border-style: solid;
 }
 .profilesection article {
@@ -44,7 +73,7 @@ p {
   width: 80%;
   align-content: center;
   text-align: center;
-  border: white;
+  border: #f0f5f9;
   border-style: solid;
   padding: 5px 40px 0px 40px;
 }
