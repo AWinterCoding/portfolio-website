@@ -91,6 +91,7 @@ p {
   width: 400px;
   object-fit: cover;
   border-radius: 15px;
+  transition: 0.7s ease;
 }
 #primaryProject {
   flex-grow: 8;
@@ -170,11 +171,11 @@ p {
 }
 .contact li {
   display: inline;
-  padding: 5px;
 }
 .contact li a {
   text-decoration: none;
   color: #f0f5f9;
+  padding: 5px;
 }
 
 footer {
@@ -188,6 +189,21 @@ footer {
 }
 #phonenumber:hover::after {
   content: "801-598-1469";
+  font-size: 30px;
+}
+nav li :hover {
+  background-color: #f0f5f9;
+  color: #1c5b8a;
+  border-radius: 5px;
+}
+.contact li a:hover {
+  background-color: #f0f5f9;
+  color: #1c5b8a;
+  border-radius: 5px;
+}
+.projects :hover .project-image {
+  opacity: 0.6;
+  transition: 0.5s ease;
 }
 @media screen and (max-width: 768px) {
   header {
@@ -198,6 +214,17 @@ footer {
   nav {
     display: block;
     float: none;
+  }
+  .profilesection {
+    width: 74%;
+    margin: 13%;
+  }
+  .profilesection h2 {
+    font-size: 44px;
+  }
+  .profilesection article {
+    font-size: 24px;
+    margin-bottom: 15px;
   }
   .projects {
     flex-direction: row;
